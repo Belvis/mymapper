@@ -1,0 +1,390 @@
+body{
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #333; /* Couleur de fond sombre */
+    color: #fff; /* Couleur du texte clair */
+}
+
+header img{
+    width: 12%;
+    height: 12%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 19px;
+    font-style: normal;
+    border-bottom: 2px solid transparent; /* Ajout d'une bordure inférieure transparente */
+    transition: border-color 0.3s, border-radius 0.3s; /* Ajout d'une transition pour une animation fluide */
+}
+
+nav ul li a:hover {
+    color: #FFF;
+    border-color: #FFF; /* Changement de couleur de la bordure inférieure au survol */
+    border-radius: 5px; /* Ajout d'une bordure arrondie au survol */
+}
+#dark-mode-toggle {
+    width: 4%;
+    height: 4%;
+        margin-right: 30px;
+            margin-left: 10px;
+            margin-top: 10px;
+}
+
+main {
+    margin-top: 12%;
+    text-align: center;
+    margin: 100px
+}
+
+main img {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+main p {
+    text-align: center;
+    margin-top: 2%;
+    color: #fff; /* Couleur du texte clair */
+}
+
+h1 {
+    color: #C0A0B7; /* Couleur du titre principale */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th a {
+    text-decoration: none;
+    color: #C0A0B7; /* Couleur du lien dans l'en-tête de tableau */
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    color: #fff; /* Couleur du texte clair */
+     vertical-align: top;
+}
+
+th h2,
+td h2 {
+    margin: 0;
+}
+
+table th,
+table td {
+    border: none;
+}
+
+td ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #C0A0B7; /* Couleur des liens */
+}
+
+a:hover {
+    color: #FFD4F3; /* Couleur des liens en surbrillance */
+}
+
+footer {
+    background-color: #222; /* Couleur de fond du pied de page sombre */
+    color: #fff;
+    padding: 1%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+}
+
+footer p {
+    margin-right: 25px;
+        margin-left: 25px;
+        margin-top: 0;
+        margin-bottom: 0;
+    color: #fff; /* Couleur du texte clair */
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer img {
+    margin: 1%;
+    width: 2%;
+    height: auto;
+}
+
+#back-to-top img {
+    width: 7%;
+    height: auto;
+}
+
+#back-to-top {
+    color: #00FF00;
+    text-decoration: none;
+    position: absolute;
+    right: 0.1%;
+    bottom: 70%;
+    margin-bottom: 1%;
+}
+
+#back-to-top:hover {
+    color: #0056b3;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #444; /* Couleur de fond du conteneur sombre */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); /* Ombre légère */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #C0A0B7; /* Couleur du texte d'étiquette */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="search"],
+input[type="url"] {
+    padding: 10px;
+    width: calc(100% - 100px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff; /* Couleur du texte clair */
+    background-color: #555; /* Couleur de fond du champ de saisie sombre */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #C0A0B7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #603417;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff; /* Couleur du texte clair */
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    position: relative;
+}
+
+.photo figure {
+    margin: 0 20px;
+    position: relative;
+}
+
+.photo img {
+    max-width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Ombre légère */
+}
+
+.photo figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8); /* Arrière-plan de la légende */
+    padding: 8px;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo figure:hover figcaption {
+    opacity: 1;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #777; /* Couleur des bordures du tableau sombre */
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table td ul {
+    text-align: left;
+}
+
+.custom-table td ul li {
+    text-align: left;
+}
+.custom-table td ul li {
+    text-align: left;
+}
+.cookie-banner {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 23px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cookie-banner p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.cookie-banner button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cookie-banner button:hover {
+    background-color: #cccccc;
+}
+/* Mode sombre pour .td5css */
+.td5css ul,
+.td5css li {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.td5css table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+
+.td5css th,
+.td5css td {
+    border: 1px solid #777;
+    padding: 8px;
+    color: #fff; /* Texte blanc dans le mode sombre */
+}
+
+.td5css caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff; /* Couleur de la légende blanche dans le mode sombre */
+}
+
+.td5css thead th {
+    background-color: #555; /* Fond gris foncé pour l'en-tête du tableau dans le mode sombre */
+}
+
+.td5css tbody tr:nth-child(even) {
+    background-color: #333; /* Fond gris foncé pour les lignes paires du corps du tableau dans le mode sombre */
+}
+
+.td5css tbody tr:hover {
+    background-color: #444; /* Fond gris plus clair au survol dans le mode sombre */
+}
+
+/* Mode sombre pour .td6css */
+.td6css table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #777;
+}
+
+.td6css th,
+.td6css td {
+    border: 1px solid #777;
+    padding: 10px;
+    text-align: center;
+}
+
+.td6css th {
+    background-color: #333; /* Fond gris foncé pour l'en-tête du tableau dans le mode sombre */
+}
+
+.td6css td {
+    background-color: #444; /* Fond gris plus clair pour les cellules du tableau dans le mode sombre */
+}
+.photo-caption {
+            font-style: italic;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+
+        .photo-container img {
+
+            border: 5px solid #fff; 
+            box-shadow: 0 0 10px #666; 
+        }
